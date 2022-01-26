@@ -13,7 +13,7 @@ def nOddOrEven(inputNum):
     print("Not Weird")
   elif(inputNum % 2 == 0) and (inputNum in range(6, 21)):
     print("Weird")
-  elif(inputNum > 20):
+  else:
     print("Not Weird")
   
 
