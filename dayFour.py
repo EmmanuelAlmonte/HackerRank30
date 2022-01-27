@@ -16,5 +16,5 @@ for i in range(0, t):
     p.amIOld()
     print("")
 
-# This is not complete, solution will be uploaded within 3 daysself.
+# This is not complete, solution will be uploaded within 3 days. 
 
