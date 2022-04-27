@@ -1,21 +1,22 @@
 function processData(input) {
     //Enter your code here
-    input = input.split('\n')
+    // This gets turned into an array consisting of the strings in input seperated by each new line.
+    input = input.split('/n')
+    
+    for(let i = 1; i < input.length; i++){
+        let splitWord = input[i].split('')
+        
+        let evenIndex = ''
+        let oddIndex = ''
 
-    for(let i=1;i<input.length;i++){
-        var splitWord = input[i].split('');
-
-        var even = '';
-        var odd = '';
-
-        for(x=0;x<splitWord.length;x++){
-            if(x%2==0){
-                even = even + splitWord[x];
-            }else{
-                odd = odd +splitWord[x];
+        for(let x = 0; x < splitWord.length; x++){
+            if(x % 2 == 0) {
+                evenIndex += splitWord[x]
+            } else {
+                oddIndex += splitWord[x]
             }
         }
-        console.log(even + ' '+ odd);
+        console.log(even + ' ' + odd)
     }
 }
 process.stdin.resume();
